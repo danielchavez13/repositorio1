@@ -1,0 +1,20 @@
+AbarrotesMX
+---------------------------------------
+E-commerce que tiene como objetivo la facil y rapida obtencion de productos en un inventario dentro de una tienda de abarrotes utilizado por usuarios para su entrega.
+
+
+
+
+Instrucciones
+
+ 1. git clone https://github.com/danielchavez13/repositorio1.git
+ 2. Cd AbarrotesMX
+ 3. Composer install
+ 4. 'cp .env.example .env'
+ 5. php artisan key generate
+ -------------------------------------
+ Autores
+
+ 1. Jesus Alberto Garcia Zamudio
+ 2. Saul Eduardo Delgado Gonzales
+ 3. Eduardo Daniel Chavez Rodriguez
