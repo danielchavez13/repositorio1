@@ -11,6 +11,24 @@
 |
 */
 
+Route::get ('/',function (){
+  return view ('welcome');
+});
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get ('/',function (){
+  return view ('welcome');
+});
+Route::get ('/bienvenida/{nombre}/{apellido?}',function($nombre, $apellido = null){
+  return $nombre . ' ' . $apellido;
+return view ('paginas.bienvenida')
+  ->with([
+    'nombre' => $nombre,
+    'apellido' =>$apellido
+  ]);
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
