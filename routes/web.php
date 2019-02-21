@@ -14,11 +14,14 @@
 Route::get ('/',function (){
   return view ('welcome');
 });
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get ('/',function (){
-  return view ('welcome');
+Route::get ('/info','PaginasController@info');
+Route::get ('/contacto','PaginasController@contacto');
+Route::get ('/bienvenida/{nombre}/{apellido}','PaginasController@info')
+
+Auth::routes();
+
+Route::get ('/contacto',function (){
+  return view ('paginas.contacto');
 });
 Route::get ('/bienvenida/{nombre}/{apellido?}',function($nombre, $apellido = null){
   return $nombre . ' ' . $apellido;
